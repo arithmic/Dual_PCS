@@ -1,0 +1,33 @@
+
+package = { name = "main", version = "0.1.0", edition = "2021" }
+
+[dependencies]
+helper = { version = "0.1.0", path = "../helper" }
+
+setup = { version = "0.1.0", path = "../setup" }
+bls381 = { git = "ssh://git@github.com/arithmic/Field_Open.git", branch = "main" }
+traits = { git = "ssh://git@github.com/arithmic/Field_Open.git", branch = "main" }
+linking_prover = { version = "0.1.0", path = "../linking_prover" }
+linking_verifier = { version = "0.1.0", path = "../linking_verifier" }
+uni_multi_prover = { version = "0.1.0", path = "../uni_multi_prover" }
+uni_multi_verifier = { version = "0.1.0", path = "../uni_multi_verifier" }
+criterion = "0.5"
+
+
+[dev-dependencies]
+criterion-plot = "0.4"
+
+[[bench]]
+name = "linking_benchmark"
+harness = false
+features = ["std"]
+
+[[bench]]
+name = "univariate_benchmark"
+harness = false
+features = ["std"]
+
+[[bench]]
+name = "multilinear_benchmark"
+harness = false
+features = ["std"]

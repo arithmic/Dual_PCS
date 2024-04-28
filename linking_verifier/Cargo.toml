@@ -1,0 +1,5 @@
+package = { name = "linking_verifier", version = "0.1.0" }
+
+[dependencies]
+helper = { version = "0.1.0", path = "../helper" }
+dory = { version = "0.1.0", path = "../dory" }

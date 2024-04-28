@@ -1,0 +1,19 @@
+[package]
+name = "rand-utils"
+version = "0.1.0"
+description = "Random value generation utilities for Arithmic crates"
+authors = ["arithmic contributors"]
+readme = "README.md"
+license = ""
+repository = "https://github.com/arithmic/stark"
+documentation = ""
+categories = ["cryptography"]
+keywords = ["rand"]
+edition = "2021"
+rust-version = "1.63"
+[lib]
+bench = false
+[dependencies]
+utils = { version = "0.1.0", path = "../core" }
+[target.'cfg(not(target_family = "wasm"))'.dependencies]
+rand = { version = "0.8" }

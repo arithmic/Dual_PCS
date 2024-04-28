@@ -1,0 +1,21 @@
+[package]
+name = "utils"
+version = "0.1.0"
+description = "Utilities for the Arithmic STARK prover/verifier"
+authors = ["arithmic contributors"]
+readme = "README.md"
+license = ""
+repository = "https://github.com/arithmic/stark"
+documentation = ""
+categories = ["cryptography", "no-std"]
+keywords = ["serialization", "transmute"]
+edition = "2021"
+rust-version = "1.63"
+[lib]
+bench = false
+[features]
+concurrent = ["rayon", "std"]
+default = ["std"]
+std = []
+[dependencies]
+rayon = { version = "1.5.3", optional = true }

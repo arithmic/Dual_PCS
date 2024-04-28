@@ -1,0 +1,15 @@
+[package]
+name = "helper"
+version = "0.1.0"
+
+[dependencies]
+curve_traits = { git = "ssh://git@github.com/arithmic/ECC_Open.git", branch = "main" }
+bls_curve = { git = "ssh://git@github.com/arithmic/ECC_Open.git", branch = "main" }
+pairing = { git = "ssh://git@github.com/arithmic/Pairing_Open.git", branch = "main" }
+bls381 = { git = "ssh://git@github.com/arithmic/Field_Open.git", branch = "main" }
+traits = { git = "ssh://git@github.com/arithmic/Field_Open.git", branch = "main" }
+rayon = "1.7.0"
+crypto_bigint = { git = "ssh://git@github.com/arithmic/crypto_bigint.git", branch = "main", features = [
+    "generic-array",
+    "zeroize",
+] }

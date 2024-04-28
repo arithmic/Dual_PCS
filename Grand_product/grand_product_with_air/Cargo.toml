@@ -1,0 +1,32 @@
+[package]
+name = "grand_product_with_air"
+version = "0.1.0"
+edition = "2021"
+
+# See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
+
+[dependencies]
+bls381 = { git = "ssh://git@github.com/arithmic/Field_Open.git", branch = "main" }
+bls_curve = { git = "ssh://git@github.com/arithmic/ECC_Open.git", branch = "main" }
+curve_traits = { git = "ssh://git@github.com/arithmic/ECC_Open.git", branch = "main" }
+traits = { git = "ssh://git@github.com/arithmic/Field_Open.git", branch = "main" }
+channel = { version = "0.1.0", path = "../../helper/channel" }
+fft = { git = "ssh://git@github.com/arithmic/FFT_Open.git", branch = "main" }
+table = { git = "ssh://git@github.com/arithmic/Table_Open.git", branch = "main" }
+crypto_bigint = { git = "ssh://git@github.com/arithmic/crypto_bigint.git", branch = "main" }
+kzg_fft = { version = "0.1.0", path = "../../KZG/kzg_fft" }
+helper = { version = "0.1.0", path = "../../helper" }
+pairing = { git = "ssh://git@github.com/arithmic/Pairing_Open.git", branch = "main" }
+rayon = "1.8.0"
+rand = "0.8.5"
+
+[dev-dependencies]
+criterion = "0.5"
+
+[lib]
+bench = false
+
+[[bench]]
+name = "grand_product_benchmark"
+harness = false
+features = ["std"]

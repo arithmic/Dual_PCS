@@ -1,0 +1,17 @@
+[package]
+name = "polynomial"
+version = "0.1.0"
+edition = "2021"
+
+# See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
+
+[dependencies]
+bls381 = { git = "ssh://git@github.com/arithmic/Field_Open.git", branch = "main" }
+bls_curve = { git = "ssh://git@github.com/arithmic/ECC_Open.git", branch = "main" }
+traits = { git = "ssh://git@github.com/arithmic/Field_Open.git", branch = "main" }
+rayon = "1.8.0"
+crypto_bigint = { git = "ssh://git@github.com/arithmic/crypto_bigint.git", branch = "main", features = [
+    "generic-array",
+    "zeroize",
+] }
+multilinear_kzg = {git = "ssh://git@github.com/arithmic/Dual_PCS.git", branch = "main" }

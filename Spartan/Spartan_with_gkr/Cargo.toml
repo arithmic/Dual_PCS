@@ -1,0 +1,30 @@
+
+[package]
+name = "Spartan_with_gkr"
+version = "0.1.0"
+edition = "2021"
+
+# See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
+
+[dependencies]
+bls381 = { git = "ssh://git@github.com/arithmic/Field_Open.git", branch = "main" }
+bls_curve = { git = "ssh://git@github.com/arithmic/ECC_Open.git", branch = "main" }
+traits = { git = "ssh://git@github.com/arithmic/Field_Open.git", branch = "main" }
+channel = { version = "0.1.0", path = "../../helper/channel" }
+polynomial = { version = "0.1.0", path = "../../helper/polynomial" }
+crypto_bigint = { git = "ssh://git@github.com/arithmic/crypto_bigint.git", branch = "main" }
+grand_product_with_gkr = { version = "0.1.0", path = "../../Grand_product/grand_product_with_gkr" }
+multilinear_kzg = { version = "0.1.0", path = "../../Multilinear/multilinear_kzg" }
+rand = "0.8.5"
+rayon = "1.8.0"
+
+[lib]
+bench = false
+
+[dev-dependencies]
+criterion = "0.5"
+[[bench]]
+name = "spartan_benchmark"
+
+harness = false
+features = ["std"]
