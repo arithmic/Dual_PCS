@@ -34,6 +34,5 @@ Here is an example of KZG commitment scheme using the BLS12-381 curve.
 
 ### Dependencies :
 1. crypto_bigint [https://github.com/arithmic/crypto_bigint].
-2. field traits repository [https://github.com/arithmic/field_trait.git].
-3. ecc_curve repository [https://github.com/arithmic/ecc_curve.git].
-4. pairing repository [https://github.com/arithmic/Pairing.git].
+2. field traits repository [https://github.com/arithmic/Field_Open.git].
+3. ecc_curve repository [https://github.com/arithmic/ECC_Open.git].

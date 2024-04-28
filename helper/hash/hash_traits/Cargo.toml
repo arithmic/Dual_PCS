@@ -1,0 +1,13 @@
+[package]
+name = "hash_traits"
+version = "0.1.0"
+edition = "2021"
+
+[dependencies]
+
+crypto_bigint = { git = "ssh://git@github.com/arithmic/crypto_bigint.git", branch = "main", features = [
+    "generic-array",
+    "zeroize",
+] }
+traits = { git = "ssh://git@github.com/arithmic/Field_Open.git", branch = "main" }
+utils = { git = "ssh://git@github.com/arithmic/Field_Open.git", branch = "main" }

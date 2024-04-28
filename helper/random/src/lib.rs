@@ -1,7 +1,7 @@
 pub mod errors;
 use bls381::{fp::Fp, scalar::Scalar};
 use errors::RandomCoinError;
-use non_algebraic_hash_traits::traits::{Digest, NonAlgebraicHasher};
+use hash_traits::traits::{Digest, NonAlgebraicHasher};
 use traits::traits::PrimeField;
 
 use core::{convert::TryInto, marker::PhantomData};

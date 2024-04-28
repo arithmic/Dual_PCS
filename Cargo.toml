@@ -16,9 +16,11 @@ members = [
     "Spartan/Spartan_with_air",
     "Grand_product/grand_product_with_air",
     "Grand_product/grand_product_with_gkr",
-    "helper/utils/core",
-    "helper/utils/rand",
     "helper/channel",
     "helper/random",
     "helper/polynomial",
+    "helper/hash/keccak",
+    "helper/hash/hash_traits",
+    "pairing",
+    "fft",
 ]

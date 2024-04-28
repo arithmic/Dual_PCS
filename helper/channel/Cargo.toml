@@ -7,14 +7,14 @@ edition = "2021"
 
 [dependencies]
 random = { path = "../random" }
-non_algebraic_hash_traits = { git = "ssh://git@github.com/arithmic/Hashes_Open.git", branch = "main" }
+hash_traits = { version = "0.1.0", path = "../hash/hash_traits" }
 bls381 = { git = "ssh://git@github.com/arithmic/Field_Open.git", branch = "main" }
 bls_curve = { git = "ssh://git@github.com/arithmic/ECC_Open.git", branch = "main" }
 traits = { git = "ssh://git@github.com/arithmic/Field_Open.git", branch = "main" }
-utils = { version = "0.1.0", path = "../utils/core", default-features = false }
-multilinear_kzg = {version = "0.1.0", path = "../../Multilinear/multilinear_kzg"}
+utils = { git = "ssh://git@github.com/arithmic/Field_Open.git", branch = "main" }
+multilinear_kzg = { version = "0.1.0", path = "../../Multilinear/multilinear_kzg" }
 crypto_bigint = { git = "ssh://git@github.com/arithmic/crypto_bigint.git", branch = "main", features = [
     "generic-array",
     "zeroize",
 ] }
-keccak = { git = "ssh://git@github.com/arithmic/Hashes_Open.git", branch = "main" }
+keccak = { version = "0.1.0", path = "../hash/keccak" }

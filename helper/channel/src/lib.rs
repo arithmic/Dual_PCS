@@ -4,9 +4,9 @@ use bls_curve::{
     gt::Gt,
 };
 use crypto_bigint::Encoding;
+use hash_traits::traits::NonAlgebraicHasher;
 use keccak::Keccak256;
 use multilinear_kzg::common::MleCommit;
-use non_algebraic_hash_traits::traits::NonAlgebraicHasher;
 use random::RandomCoin;
 use std::io::Write;
 pub struct Channel {

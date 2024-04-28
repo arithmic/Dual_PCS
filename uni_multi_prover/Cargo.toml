@@ -10,11 +10,10 @@ traits = { git = "ssh://git@github.com/arithmic/Field_Open.git", branch = "main"
 curve_traits = { git = "ssh://git@github.com/arithmic/ECC_Open.git", branch = "main" }
 bls381 = { git = "ssh://git@github.com/arithmic/Field_Open.git", branch = "main" }
 bls_curve = { git = "ssh://git@github.com/arithmic/ECC_Open.git", branch = "main" }
-pairing = { git = "ssh://git@github.com/arithmic/Pairing_Open.git", branch = "main" }
+pairing = { version = "0.1.0", path = "../pairing" }
 helper = { version = "0.1.0", path = "../helper" }
-
 rayon = "*"
-fft = { git = "ssh://git@github.com/arithmic/FFT_Open.git", branch = "main" }
-channel = {version = "0.1.0", path = "../helper/channel"}
+fft = { version = "0.1.0", path = "../fft" }
+channel = { version = "0.1.0", path = "../helper/channel" }
 setup = { version = "0.1.0", path = "../setup" }
 dory = { version = "0.1.0", path = "../dory" }

@@ -1,0 +1,20 @@
+[package]
+name = "pairing"
+version = "0.1.0"
+edition = "2021"
+
+[dependencies]
+# crypto import
+crypto_bigint = { git = "ssh://git@github.com/arithmic/crypto_bigint.git", branch = "main", features = [
+    "generic-array",
+    "zeroize",
+] }
+traits = { git = "ssh://git@github.com/arithmic/Field_Open.git", branch = "main" }
+curve_traits =  { git = "ssh://git@github.com/arithmic/ECC_Open.git", branch = "main" }
+jubjub_curve=  { git = "ssh://git@github.com/arithmic/ECC_Open.git", branch = "main" }
+bls381= {git = "ssh://git@github.com/arithmic/Field_Open.git", branch = "main" }
+bls_curve= { git = "ssh://git@github.com/arithmic/ECC_Open.git", branch = "main" }
+babyjub_curve = { git = "ssh://git@github.com/arithmic/ECC_Open.git", branch = "main" }
+bn254= {git = "ssh://git@github.com/arithmic/Field_Open.git", branch = "main" }
+BN_curve= { git = "ssh://git@github.com/arithmic/ECC_Open.git", branch = "main" }
+

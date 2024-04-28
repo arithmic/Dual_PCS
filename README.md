@@ -14,21 +14,6 @@ Field
 Elliptic Curve
 `git@github.com:arithmic/ECC_Open.git`
 
-Pairing
-`git@github.com:arithmic/Pairing_Open.git`
-
-Hashes
-`git@github.com:arithmic/non-algebraic-hashes.git`
-
-FFT
-`git@github.com:arithmic/FFT_Open.git`
-
-Random Coin
-`git@github.com:arithmic/Random_Coin_Open.git`
-
-Table
-`git@github.com:arithmic/Table_Open.git`
-
 To run tests:
 
 ```text
